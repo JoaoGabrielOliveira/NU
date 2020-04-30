@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  release: MyString
+  release: 2020-04-30
   artist: one
 
 two:
   title: MyString
-  release: MyString
+  release: 2020-04-30
   artist: two
