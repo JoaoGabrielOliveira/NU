@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default HomeScreen = () => {
+const HomeScreen = () => {
     return(
-        <h1> Tela Principal </h1>
+        <h1>Principal Page</h1>
     )
 }
+
+export default HomeScreen;

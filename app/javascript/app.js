@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react'
-//import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-bootstrap/dist/bootstrap.min.css'
-import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Routes from './routes'
 
 const App = () => {
     return(
         <Fragment>
-            <Button color='primary'> Hello World </Button>
+            <BrowserRouter>
+                < Routes />
+            </BrowserRouter>
         </Fragment>
     )
 }
