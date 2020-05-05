@@ -1,11 +1,11 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import HomeScreen from './react/screens/home.screen'
-import AlbumScreen from './react/screens/album.screen'
-import ArtistsScreen from './react/screens/artists.screen'
-import SearchScreen from './react/screens/search.screen'
-import FavoriteScreen from './react/screens/favorites.screen'
+import HomeScreen from './react/screens/home'
+import AlbumScreen from './react/screens/album'
+import ArtistsScreen from './react/screens/artists'
+import SearchScreen from './react/screens/search'
+import FavoriteScreen from './react/screens/favorites'
 
 const Routes = () => {
     return (

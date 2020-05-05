@@ -12,3 +12,9 @@
  *
  *= require_self
  */
+
+ body, html {
+    height: 100vh;
+    font-family: 'Roboto';
+    background: #2D3359;
+}
