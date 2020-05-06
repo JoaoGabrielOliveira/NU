@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
+import { Navbar, Nav, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
 import { useLocation } from 'react-router-dom';
 import './index.css';
 
@@ -16,7 +16,20 @@ const Menu = () => {
 
     else
     {
+        actionButton = <> <Nav.Link href="/">Pagina Principal</Nav.Link>
+        <Nav.Link href="/">Galeria</Nav.Link>
+        <Nav.Link href="/">Sobre</Nav.Link>
+        <Dropdown as={ButtonGroup}>
+        <Button variant="outline-dark">Usuario</Button>
 
+        <Dropdown.Toggle split variant="outline-dark" id="dropdown-split-basic" />
+
+        <Dropdown.Menu>
+            <Dropdown.Item href="/users/sign_out">Logoff</Dropdown.Item>
+            <Dropdown.Item href="/users/edit">Editar Perfil</Dropdown.Item>
+        </Dropdown.Menu>
+        </Dropdown>
+        </>
     }
 
     return(            
@@ -30,12 +43,6 @@ const Menu = () => {
                 { actionButton }
             </Nav>
         </Navbar.Collapse>
-        </Navbar>
-
-        <Navbar bg='dark' className='justify-content-end'>
-            <Nav.Item>
-                <Button>LOGAR</Button>
-            </Nav.Item>
         </Navbar>
         </>
     )
