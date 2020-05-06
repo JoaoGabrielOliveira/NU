@@ -1,4 +1,4 @@
-nav.navbar 
+    nav.navbar#Menu  
 {
     background: linear-gradient(to right, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed', GradientType=1 );

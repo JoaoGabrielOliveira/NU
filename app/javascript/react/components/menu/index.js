@@ -1,21 +1,43 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
+import { useLocation } from 'react-router-dom';
 import './index.css';
 
+let actionButton;
+
 const Menu = () => {
+
+    if(useLocation().pathname == '/')
+    {
+        actionButton = <> <Nav.Link href="/">Pagina Principal</Nav.Link>
+                        <Nav.Link href="/">Galeria</Nav.Link>
+                        <Nav.Link href="/">Sobre</Nav.Link> </>
+    }
+
+    else
+    {
+
+    }
+
     return(            
-        <Navbar expand="lg">
+        <>
+        <Navbar id="Menu" expand="lg">
         <Navbar.Brand className='logo'> <label>NU</label></Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='justify-content-end'>
-            <Nav className="">
-                <Nav.Link href="/home">Pagina Principal</Nav.Link>
-                <Nav.Link eventKey="link-1">Galeria</Nav.Link>
-                <Nav.Link eventKey="link-2">Sobre</Nav.Link>
+            <Nav>
+                { actionButton }
             </Nav>
         </Navbar.Collapse>
         </Navbar>
+
+        <Navbar bg='dark' className='justify-content-end'>
+            <Nav.Item>
+                <Button>LOGAR</Button>
+            </Nav.Item>
+        </Navbar>
+        </>
     )
 }
 

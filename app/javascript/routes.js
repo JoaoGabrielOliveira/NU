@@ -6,6 +6,7 @@ import AlbumScreen from './react/screens/album'
 import ArtistsScreen from './react/screens/artists'
 import SearchScreen from './react/screens/search'
 import FavoriteScreen from './react/screens/favorites'
+import GalleryScreen from './react/screens/gallery'
 
 const Routes = () => {
     return (
@@ -15,6 +16,7 @@ const Routes = () => {
             <Route exact path='/artist/:id' component={ArtistsScreen} />
             <Route exact path='/search' component={SearchScreen} />
             <Route exact path='/favorites' component={FavoriteScreen} />
+            <Route exact path='/gallery' component={GalleryScreen} />
         </Switch>
     )
 }
