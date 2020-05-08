@@ -1,10 +1,11 @@
 import React from 'react'
+import Galeria from '../../components/commun/galeria'
 
 import './index.css';
 
 const GalleryScreen  = () => {
         return (
-                <h1> Gallery Page </h1>
+                <Galeria.Header />
         );
 }
  
