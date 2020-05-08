@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
 import { useLocation } from 'react-router-dom';
 import './index.css';
 
@@ -10,17 +11,19 @@ const Menu = () => {
     if(useLocation().pathname == '/')
     {
         actionButton = <> <Nav.Link href="/">Pagina Principal</Nav.Link>
-                        <Nav.Link href="/">Galeria</Nav.Link>
+                        <Nav.Link href="/gallery">Galeria</Nav.Link>
                         <Nav.Link href="/">Sobre</Nav.Link> </>
     }
 
     else
     {
-        actionButton = <> <Nav.Link href="/">Pagina Principal</Nav.Link>
+        actionButton = <>
+        <Nav.Link href="/">Pagina Principal</Nav.Link>
         <Nav.Link href="/">Galeria</Nav.Link>
         <Nav.Link href="/">Sobre</Nav.Link>
+
         <Dropdown as={ButtonGroup}>
-        <Button variant="outline-dark">Usuario</Button>
+        <Button className='btn-user' variant="outline-dark">Usuario</Button>
 
         <Dropdown.Toggle split variant="outline-dark" id="dropdown-split-basic" />
 

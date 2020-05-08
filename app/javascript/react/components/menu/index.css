@@ -39,6 +39,10 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link:hover {
     margin-left: 10%;
 }
 
+.btn-user {
+    min-width: 3em;
+}
+
 @media only screen and (max-width: 768px) {
     .logo {
         text-align: center;
