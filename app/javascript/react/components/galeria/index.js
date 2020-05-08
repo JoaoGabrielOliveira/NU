@@ -1,43 +1,56 @@
 import React from 'react'
-
+import Header from '../common/Header'
 
 /*
-    Titulo:string
-    Pagination:bool
-
-    
+    title:string
+    menu:bool
+    menu_itens:json
 */
-const Galeria = (props) =>
+
+export default class Galeria extends React.Component 
 {
-    return(
-        <div className='Galeria'>
+    render()
+    {
+        return (
+            <div id='Galeria'>
             <Header>
-                <h1>{props.title}</h1>
+                <h1>{this.props.title}</h1> 
             </Header>
-            {props.children}
-        </div>
-    );
-}
-
-const Header = (props) => 
-{
-        return(
-            <header>
-                {props.children}
-            </header>
+                {this.props.children}
+            </div>
         );
+    }
 }
-
-const Galeria_Imagens = (props) => 
+export class Galeria_Imagens extends React.Component 
 {
-    <div className='Galeria-Imagens'>
-        {props.children}
-    </div>
-}
+    constructor(props)
+    {
+        super();        
+    }
 
-const Galeria_Item = (props) =>
+    render()
+    {
+        return(
+            <div className='galeria-collection'>
+                {this.props.children}
+            </div>
+        );
+    }  
+}
+export class Galeria_Item extends React.Component 
 {
-    <img src={props.src}/>
-}
+    constructor(props)
+    {
+        super();        
+    }
 
-export default Galeria;
+    render()
+    {
+        return(
+            <div className='item'>
+                <p>{this.props.title}</p>
+                <img src={this.props.src} />
+            </div>
+        );
+    }  
+}
