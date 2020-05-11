@@ -1,21 +1,15 @@
-    nav.navbar#Menu  
+nav.navbar#Menu  
 {
     background: linear-gradient(to right, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed', GradientType=1 );
 }
 
-.navbar-nav
+.navbar-nav 
 {
-    width: 40%;
+    width: 70%;
 }
 
-
-nav.navbar .navbar-toggler-icon
-{
-    background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/230/guitar_1f3b8.png);
-}
-
-nav.navbar .navbar-collapse .navbar-nav .nav-link
+nav.navbar .navbar-collapse .navbar-nav .nav-link, .btn-group
 {
     text-decoration: none;
     color: black;
@@ -23,7 +17,7 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link
 
     font-size: 120%;
 
-    margin: 0 3%;
+    margin: 0 5%;
 }
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link:hover {
@@ -44,7 +38,18 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .logo {
+    .logo
+    {
         text-align: center;
     }
+
+    
+ }
+
+ @media only screen and (max-width: 1200px)
+ {
+    .navbar-nav 
+    {
+        width: 70%;
+    }     
  }

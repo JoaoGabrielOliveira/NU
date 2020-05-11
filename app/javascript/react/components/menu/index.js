@@ -1,6 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
-import Col from 'react-bootstrap/Col'
+import { Navbar, Nav, Button, Dropdown, ButtonGroup, Row } from 'react-bootstrap'
 import { useLocation } from 'react-router-dom';
 import './index.css';
 
