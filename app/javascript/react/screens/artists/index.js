@@ -20,10 +20,17 @@ const ArtistScreen = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin porttitor lacus at rhoncus. Nam vitae dolor eu justo ultricies ultricies nec eu lectus. Etiam aliquam turpis non dignissim tempus.
             </div>
 
-        <Lista lista>
+        <Lista type='0' lista>
         </Lista>
             
         </div>
+
+        <Header>
+            <h2>Albuns</h2>
+        </Header>
+
+        <Lista type='1'>
+        </Lista>
         </>
     );
 }
