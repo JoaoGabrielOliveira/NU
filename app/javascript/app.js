@@ -6,6 +6,8 @@ import Routes from './routes'
 
 import Menu from './react/components/menu'
 
+import './app.css'
+
 const App = () => {
     return(
         <Fragment>
