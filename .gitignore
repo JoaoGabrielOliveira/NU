@@ -36,4 +36,4 @@ yarn-debug.log*
 .yarn-integrity
 
 #Configurações do VS Code
-ambiente.code-workspace
+amb.code-workspace

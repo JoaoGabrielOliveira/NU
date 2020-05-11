@@ -11,3 +11,26 @@ body
 {
     background: #000;
 }
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 10px ;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #92082d5e;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
+}

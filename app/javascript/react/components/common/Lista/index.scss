@@ -1,0 +1,24 @@
+ul.ListaComImagens {
+    list-style: none;
+
+    display: flex;
+    box-flex: wrap;
+    margin: 0%;
+    padding: 0;
+
+    text-align: center;
+}
+
+.ListaComImagens li {
+    margin: 0 2%;
+    transition: filter 100ms;
+}
+
+.ListaComImagens li:hover {
+    filter: drop-shadow(0 0 5px rgb(245, 229, 2));
+}
+
+.ListaComImagens img {
+    width: 100px;
+    border-radius: 10px;
+}
