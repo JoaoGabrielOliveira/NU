@@ -21,7 +21,7 @@ const Lista = (props) =>
         case '0':
             d =
               <div className="ListaMusicas">
-              <div className='text'> Músicas favoritas:</div>
+              <div className='text'>{props.title}</div>
                 <ul className="ListaComImagens">
                 <Card li 
                 title='Sugar' src='https://upload.wikimedia.org/wikipedia/tr/b/bc/System_of_a_down.jpg' />

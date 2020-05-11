@@ -1,5 +1,13 @@
-body {
+#Artist {
   background-image: url("https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2016/10/system-of-a-down-banda-2016.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content {
+  background: #000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 64%, transparent 100%);
 }
 #Informacoes {
   padding: 50px;
@@ -7,8 +15,6 @@ body {
   font-family: "Oswald";
   width: 45%;
   height: 60vh;
-  background: #000;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 64%, transparent 100%);
   color: #ededed;
   text-align: left;
   line-height: 1.2;
