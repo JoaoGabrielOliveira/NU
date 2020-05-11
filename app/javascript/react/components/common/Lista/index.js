@@ -19,10 +19,9 @@ const Lista = (props) =>
         break;
 
         case '0':
-            //Musicas Favoritas: 
             d =
               <div className="ListaMusicas">
-              <div> Músicas favoritas:</div>
+              <div className='text'> Músicas favoritas:</div>
                 <ul className="ListaComImagens">
                 <Card li 
                 title='Sugar' src='https://upload.wikimedia.org/wikipedia/tr/b/bc/System_of_a_down.jpg' />
