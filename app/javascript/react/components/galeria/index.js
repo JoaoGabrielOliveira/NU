@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../common/Header'
+import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap'
 
 /*
     title:string
@@ -13,9 +15,6 @@ export default class Galeria extends React.Component
     {
         return (
             <div id='Galeria'>
-            <Header>
-                <h1>{this.props.title}</h1> 
-            </Header>
                 {this.props.children}
             </div>
         );
@@ -41,16 +40,26 @@ export class Galeria_Item extends React.Component
 {
     constructor(props)
     {
-        super();        
+        super();  
     }
-
+    
     render()
     {
         return(
+            <a href='/artist/1' >
             <div className='item'>
-                <p>{this.props.title}</p>
-                <img src={this.props.src} />
+                
+                <div className='itemImage'>
+                    <img src={this.props.src} />
+                </div>
+
+                <div className='itemContent'>
+                    <h2>{this.props.title}</h2>
+                    <p> {this.props.text}</p>
+                </div>
+                
             </div>
+            </a>
         );
     }  
 }
